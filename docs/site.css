@@ -1,29 +1,31 @@
 :root {
-  --bg-color: white;
-  --text-color: black;
-  --toggle-bg: #94a3b8;
-  --toggle-circle: #ffffff;
+    --bg-color: white;
+    --text-color: black;
+    --toggle-bg: #94a3b8;
+    --toggle-circle: #ffffff;
 
 }
 
 /* DARK MODE */
 .dark-mode {
-  --bs-body-bg: #121212;
-  --bs-body-color: #e8e8e8;
-  --bs-card-bg: #1c1c1c;
-  --bs-card-color: #e8e8e8;
-  --bs-border-color: rgba(255,255,255,0.15);
-  --link: #3b82f6;
+    --bs-body-bg: #121212;
+    --bs-body-color: #e8e8e8;
+    --bs-card-bg: #1c1c1c;
+    --bs-card-color: #e8e8e8;
+    --bs-border-color: rgba(255, 255, 255, 0.15);
+    --link: #3b82f6;
 }
 
 .dark-mode svg {
-    stroke: #3b82f6 !important; /* pentru icon distribuite ca linii */
-    fill: #3b82f6 !important;   /* pentru icon distribuite ca forme */
+    stroke: #3b82f6 !important;
+    /* pentru icon distribuite ca linii */
+    fill: #3b82f6 !important;
+    /* pentru icon distribuite ca forme */
 }
 
 /* Căutare alb dark mode */
 .dark-mode .navbar a[aria-label="Search"] svg {
-    stroke: #ffffff !important; 
+    stroke: #ffffff !important;
     fill: none !important;
 }
 
@@ -44,22 +46,24 @@
 
 
 body {
-  background-color: var(--bs-body-bg) !important;
-  color: var(--bs-body-color) !important;
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
 }
 
 /* Carduri Bootstrap */
-.card, .rounded, .shadow-sm {
-  background-color: var(--bs-card-bg) !important;
-  color: var(--bs-card-color) !important;
-  border-color: var(--bs-border-color) !important;
+.card,
+.rounded,
+.shadow-sm {
+    background-color: var(--bs-card-bg) !important;
+    color: var(--bs-card-color) !important;
+    border-color: var(--bs-border-color) !important;
 }
 
 /* Navbar */
 .navbar {
-  background-color: var(--bs-body-bg) !important;
-  color: var(--bs-body-color) !important;
-  border-color: var(--bs-border-color) !important;
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
+    border-color: var(--bs-border-color) !important;
 }
 
 
@@ -105,113 +109,147 @@ body {
 }
 
 /* când butonul e ON */
-#dark-mode-toggle:checked + .toggle {
+#dark-mode-toggle:checked+.toggle {
     background: #475569 !important;
 }
 
-#dark-mode-toggle:checked + .toggle::before {
+#dark-mode-toggle:checked+.toggle::before {
     transform: translateX(24px) !important;
 }
 
 /*Mai sus e dark mode toggle*/
 
-.navbar-toggler { padding:.15rem .4rem; border-radius:.5rem; }
-.navbar-toggler-icon { width:1.1rem; height:1.1rem; }
+.navbar-toggler {
+    padding: .15rem .4rem;
+    border-radius: .5rem;
+}
 
-.btn-icon { padding:.20rem; line-height:1; }
+.navbar-toggler-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+}
 
-#subnav .nav-link { padding:.20rem 0; }
+.btn-icon {
+    padding: .20rem;
+    line-height: 1;
+}
 
-.btn-icon
-{
-  width: 32px;          
-  height: 32px;
-  padding: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  border-radius: .5rem;
-  background: transparent;
-  border: 1px solid var(--bs-secondary-border-subtle);
+#subnav .nav-link {
+    padding: .20rem 0;
+}
+
+.btn-icon {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border-radius: .5rem;
+    background: transparent;
+    border: 1px solid var(--bs-secondary-border-subtle);
 }
 
 /* dimensiunea pictogramelor din interior */
-.btn-icon svg{ width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; }
+.btn-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+}
 
 /* micșorează vizual burgerul implicit Bootstrap */
-.navbar-toggler-icon{ width: 20px; height: 20px; }
+.navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+}
 
 
 /* 1) limităm lățimea textului din hero ca să nu „înece” */
-.hero-wrap{ max-width: 760px; }
+.hero-wrap {
+    max-width: 760px;
+}
 
 /* 2) spațiere consistentă între secțiuni */
-section{ scroll-margin-top: 80px; }      /* util pt. ancore */
-.container > .row{ margin-top: 0; }      /* curățare */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* util pt. ancore */
+.container>.row {
+    margin-top: 0;
+}
+
+/* curățare */
 
 /* 3) carduri: imagine/coloană fixă pe înălțime */
-.bd-placeholder-img, .card-img-top{ aspect-ratio: 4/3; object-fit: cover; }
+.bd-placeholder-img,
+.card-img-top {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
 
 /* 4) navbar: iconițe aliniate frumos la dreapta */
-.navbar .actions{ gap: .75rem; }
+.navbar .actions {
+    gap: .75rem;
+}
 
 
-.thumb-carousel .carousel-item img 
-{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.thumb-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .thumb-carousel .carousel-inner,
-.thumb-carousel .carousel-item 
-{
-        height: 100%;
+.thumb-carousel .carousel-item {
+    height: 100%;
 }
 
 /* Thumbnail box should match the intrinsic aspect ratio of the source images
    to prevent layout shifts during transitions. Images are 371x217 by default. */
 
-@media (min-width: 768px) 
-{
-  
-  .thumb-carousel
-  {
-  
-  height:260px;
-  overflow: hidden;
-  
-  }
+@media (min-width: 768px) {
+
+    .thumb-carousel {
+
+        height: 260px;
+        overflow: hidden;
+
+    }
 }
+
 /* Repoziționează indicatoarele caruselului sub containerul ratio */
-#thumb1 .carousel-indicators 
-{
+#thumb1 .carousel-indicators {
     /*position: static; /* Anulează 'position: absolute' din Bootstrap */
     /*margin-top: 0.5rem; /* Adaugă un spațiu deasupra */
-    margin-bottom:0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Modifică culoarea indicatoarelor pentru a fi vizibile pe un fundal deschis */
-#thumb1 .carousel-indicators button 
-{
-    background-color: #999; /* O culoare gri pentru indicatorii inactivi */
+#thumb1 .carousel-indicators button {
+    background-color: #999;
+    /* O culoare gri pentru indicatorii inactivi */
     width: 12px;
     height: 12px;
     border-radius: 50%;
     margin-left: 5px;
     margin-right: 5px;
 
-    border:none;
+    border: none;
     opacity: 0.7;
 }
 
 #thumb1 .carousel-indicators .active {
-    background-color: #333; /* O culoare închisă pentru indicatorul activ */
+    background-color: #333;
+    /* O culoare închisă pentru indicatorul activ */
     opacity: 1;
 }
 
-#contactForm input, #contactForm textarea {
+#contactForm input,
+#contactForm textarea {
     box-shadow: none !important;
 }
 
@@ -245,7 +283,7 @@ section{ scroll-margin-top: 80px; }      /* util pt. ancore */
 }
 
 .carousel-indicators .active {
-    background-color: #000000 !important; 
+    background-color: #000000 !important;
 }
 
 .dark-mode .carousel-indicators [data-bs-target] {
@@ -266,7 +304,8 @@ section{ scroll-margin-top: 80px; }      /* util pt. ancore */
 
     /* Grupul de iconițe – suprascriem gap-ul */
     .actions-group {
-        gap: 0.4rem !important;   /* În loc de gap-3 */
+        gap: 0.4rem !important;
+        /* În loc de gap-3 */
         margin-left: auto;
         padding-right: 0.25rem;
     }
@@ -274,7 +313,8 @@ section{ scroll-margin-top: 80px; }      /* util pt. ancore */
     /* Dark mode toggle micșorat */
     #buton_dark {
         transform: scale(0.78);
-        margin-right: 0.25rem; /* Mai apropiat de iconițe */
+        margin-right: 0.25rem;
+        /* Mai apropiat de iconițe */
     }
 
     /* Iconițe ușor micșorate pe mobile */
@@ -291,14 +331,16 @@ section{ scroll-margin-top: 80px; }      /* util pt. ancore */
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 0 !important; /* Elimină spațiile mari */
+        gap: 0 !important;
+        /* Elimină spațiile mari */
     }
 
     /* Brand + Home să fie lipite dar compacte */
     .navbar-brand {
         font-size: 1rem !important;
         margin-left: 0.25rem;
-        margin-right: auto; /* împinge iconițele spre dreapta */
+        margin-right: auto;
+        /* împinge iconițele spre dreapta */
         white-space: nowrap;
     }
 
@@ -336,14 +378,15 @@ section{ scroll-margin-top: 80px; }      /* util pt. ancore */
     padding: 0.35rem 1rem;
     border-radius: 30px;
 
-    background-color: #0d6efd;  /* albastru */
+    background-color: #0d6efd;
+    /* albastru */
     color: #ffffff;
     border-color: #0d6efd;
     transition: 0.25s ease;
 }
 
 .btn-outline-primary:hover {
-    background-color: #0b5ed7;  
+    background-color: #0b5ed7;
     border-color: #0b5ed7;
     color: #ffffff;
 }
@@ -367,14 +410,10 @@ section{ scroll-margin-top: 80px; }      /* util pt. ancore */
 }
 
 
-.carousel-fade .carousel-item {
-  transition: opacity 1s ease-in-out;
-}
-
 .carousel-item img {
     width: 100%;
-    height: 250px;           
-    object-fit: cover;       
+    height: 250px;
+    object-fit: cover;
     object-position: center;
     transition: opacity 1s ease-in-out;
 }
@@ -425,11 +464,11 @@ section{ scroll-margin-top: 80px; }      /* util pt. ancore */
 }
 
 .dark-mode .section-title::after {
-    background: #66aaff; 
+    background: #66aaff;
 }
 
 .dark-mode .video-wrapper {
-    box-shadow: 0 0 20px rgba(255,255,255,0.15)!important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15) !important;
 }
 
 .dark-mode iframe {
@@ -468,5 +507,238 @@ section{ scroll-margin-top: 80px; }      /* util pt. ancore */
 
 .dark-mode .scroll-btn:hover {
 
-    color:#0d6efd;
+    color: #0d6efd;
+}
+
+.hero-adapted {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    background-image: url("https://images.unsplash.com/photo-1520697222860-0721ca4e508a");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-adapted::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    margin-left: 60px;
+    max-width: 550px;
+}
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 350px; /* îl poți modifica */
+    background-image: url("img/Bible.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    z-index: 1;
+}
+
+.hero-blur {
+    position: relative;
+    width: 100%;
+    height: 380px; 
+    
+    background-image: url("Bible.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-blur::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(6px); 
+    background-color: rgba(0,0,0,0.35); 
+    z-index: 1;
+}
+
+.hero-blur::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0));
+    z-index: 2;
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 3;
+    max-width: 600px;
+}
+
+.hero-card {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    background-image: url("img/Bible.jpg");  /* poza ta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: white !important;
+    border-radius: 12px;
+}
+
+/* Blur + darken layer */
+.hero-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(3px);
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+
+/* Subtle gradient left->right */
+.hero-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0));
+    z-index: 2;
+}
+
+/* Content stays above blur & gradient */
+.hero-card-content {
+    position: relative;
+    z-index: 3;
+    max-width: 550px;
+}
+
+.hero-article {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background-image: url("img/genesis.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 60px;
+}
+
+/* blur + întunecare */
+.hero-article::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+
+/* gradient stânga → dreapta */
+.hero-article::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0));
+    z-index: 2;
+}
+
+/* textul din interior */
+.hero-article-inner {
+    position: relative;
+    z-index: 3;
+    padding-left: 60px;
+    max-width: 700px;
+}
+
+/* responsive */
+@media (max-width: 576px) {
+    .hero-article {
+        height: 240px;
+    }
+    
+    .hero-article-inner {
+        padding-left: 20px;
+    }
+    
+    .hero-article-inner h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.poze 
+{
+    max-height: 200px;
+    overflow: hidden;
+}
+
+
+.search-box {
+    border-radius: 12px;
+    padding: 5px 8px;
+}
+
+#searchResults .list-group-item {
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#searchResults .list-group-item:hover {
+    background: #f0f0f0;
+}
+
+.dark-mode #searchResults .list-group-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.dark-mode .modal-content {
+    background: #1c1c1c !important;
+    color: white !important;
+}
+
+.dark-mode .form-control {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
+}
+
+.dark-mode .btn-close
+{
+    
 }
