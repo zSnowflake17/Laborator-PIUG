@@ -738,7 +738,6 @@ section {
     border: 1px solid #444;
 }
 
-.dark-mode .btn-close
-{
-    
+.mb-4 {
+    margin-bottom: 1.5rem !important;
 }
