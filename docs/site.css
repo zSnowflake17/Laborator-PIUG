@@ -741,3 +741,24 @@ section {
 .mb-4 {
     margin-bottom: 1.5rem !important;
 }
+
+/* --- MENIUL ESTE PERMANENT DESCHIS PE DESKTOP --- */
+@media (min-width: 992px) {
+
+    /* Arată meniul */
+    #subnav.collapse {
+        display: block !important;
+        height: auto !important;
+        visibility: visible !important;
+    }
+
+    /* Nu mai lăsăm Bootstrap să îl ascundă */
+    #subnav.collapse:not(.show) {
+        display: block !important;
+    }
+
+    /* Ascundem hamburger-ul */
+    .navbar-toggler {
+        display: none !important;
+    }
+}

@@ -12,6 +12,30 @@
         })();
     </script>
 
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    document.querySelectorAll("#subnav .nav-link").forEach(link => {
+        const linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+
+    // Dacă suntem pe index.html → scoatem active de pe Vizitează
+    if (currentPage === "" || currentPage === "index.html") {
+        document.querySelectorAll("#subnav .nav-link").forEach(link => {
+            link.classList.remove("active");
+        });
+    }
+});
+</script>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Informatii despre muzeu</title>
